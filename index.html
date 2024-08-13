@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddles</title>
+
+    <link rel="icon" type="image/svg" href="favicon.svg">
+    <link rel="stylesheet" href="scrollbar.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sticky Navbar -->
+    <nav id="navbar">
+        <div class="nav-left">
+            <h1 id="logo">Riddles</h1>
+        </div>
+        <div class="nav-right">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+
+        </div>
+    </nav>
+
+    <!-- Main Content  -->
+    <div class="riddle">
+    <div class="question">
+        <h1>Riddle:</h1>
+        <p id="riddlePlaceholder"></p>
+    </div>
+
+    <div class="panel-container" onclick="togglePanel()" title="Click to Reveal Answer!">
+        <div class="panel-inside">
+            <p id="answerPlaceholder" class="answer"></p>
+        </div>
+        <div class="panel left-panel"></div>
+        <div class="panel right-panel"></div>
+    </div>
+    <button onclick="fetchRiddle()">New Riddle</button>
+</div>
+    <!-- Footer  -->
+    <footer>
+        <small>&copy; 2024 Riddles</small>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f" title="Facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter" title="Twitter (X)"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram" title="Instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in" title="LinkedIn"></i></a>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="https://kit.fontawesome.com/2639a720fc.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
